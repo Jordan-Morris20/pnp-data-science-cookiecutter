@@ -27,7 +27,10 @@ Install your new project in your local conda environment with:
 cd ({{ cookiecutter.package_name }})
 pip install -e .
 
-This will install your package in editable mode, so you can make 
+This will install the final modules created in this project as 
+a package that you can access under the name {{ cookiecutter.package_name }}.
+
+The package will be installed in editable mode, so you can make 
 changes to the code and see them reflected in your environment 
 without having to reinstall the package.
 """

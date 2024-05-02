@@ -19,24 +19,16 @@ _____________________________________________________________________________
 .-.-.-'   _o\ \\\     '::'   (o_ '-.-' |__\'-.-;~ ~ ~ ~ ~ ~ ~~/   /\   
           \ /  \\\__          )_\    .:::::::.-'\            '- - -|
      :::''':::::^)__\:::::::::::::::::'''''''-.  \                  '- - - - 
-    :::::::  '''''''''''   ''''''''''''':::. -'\  \       C. SWANSIGER
+    :::::::  '''''''''''   ''''''''''''':::. -'\  \       
 _____':::::_____________________________________\__\_________________________
-
-If you have not done so already, create a conda environment for your new 
-project with:
-
-cd {{cookiecutter.repo_name}}
-conda create --name {{cookiecutter.repo_name}} python=3.11
-conda activate {{cookiecutter.repo_name}}
-conda env export > environment.yml
 
 Install your new project in your local conda environment with:
 
+cd ({{ cookiecutter.package_name }})
 pip install -e .
 
-You will need to manually add data to .gitignore to prevent it from syncing to
-version control.
-
-Don't forget to sync to GitHub. Have fun!
+This will install your package in editable mode, so you can make 
+changes to the code and see them reflected in your environment 
+without having to reinstall the package.
 """
 print(help)

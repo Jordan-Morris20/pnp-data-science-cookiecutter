@@ -1,3 +1,3 @@
 # Scripts
 
-Put your standalone scripts (Python and bash) here.
+Put your standalone scripts here. When you are finished developing them, move them to the package folder ({{ cookiecutter.package_name }}).
